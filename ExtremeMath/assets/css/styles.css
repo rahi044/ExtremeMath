@@ -1,0 +1,130 @@
+﻿body {
+    margin: 0;
+    height: 100%;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100% !important;
+}
+
+.action-panel {
+    display: flex;
+    float: right;
+    padding-top: 7px;
+}
+
+.mainContentBody {
+    float: left;
+    width: 100%;
+}
+
+.grid {
+    height: calc(100vh - 160px);
+    background: white;
+}
+
+.grid-tooltip {
+  overflow: visible;
+  z-index: 9999999;
+  float: left;
+}
+
+.tooltip.uiGridCellTooltip {
+    opacity: 1;
+}
+
+    .tooltip.uiGridCellTooltip .tooltip-arrow {
+        color: #EAF0FF;
+    }
+
+    .tooltip.uiGridCellTooltip .tooltip-inner {
+        text-align: center;
+        padding: 8px;
+        color: black;
+        background-color: #ECEEFE;
+        font-size: 14px;
+        border: 1px solid #9EA4B4;
+        word-break: break-all;
+        max-width: 100%;
+    }
+
+.header {
+    height: 50px;
+    text-align: center;
+    clear: both;
+}
+
+.footer {
+    position: fixed;
+    height: 30px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+    padding-right: 20px;
+    background-color: #e7e7eb;
+}
+
+.navbar {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sideBar {
+    float: left;
+    height: calc(100vh - 50px);
+    width: 250px;
+    background-color: #f5f5f5;
+}
+
+#sidebar {
+    margin: 15px;
+}
+
+.mainContent {
+    overflow: hidden;
+    background-color: white;
+    padding: 30px 30px 60px 30px;
+}
+
+.hamburger {
+    background-color: transparent;
+}
+
+.floatRight {
+    float: right !important;
+}
+
+.labelRequired {
+    color: #d14836;
+    font: normal .8em tahoma;
+}
+
+.verticalSpacer {
+    margin: 20px 0px;
+    overflow: hidden;
+}
+
+.modalHeader {
+    background-color: #335d7e;
+    color: #fff0f5;
+}
+
+.modalBody {
+    padding: 20px 50px;
+}
+
+.formLabel {
+    font: normal 14px 'Roboto', sans-serif;
+    color: #555;
+    float: left;
+}
+
+.r-model-footer {
+    background-color: #f2f2f2;
+}

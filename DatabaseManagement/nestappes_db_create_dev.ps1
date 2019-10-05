@@ -1,0 +1,11 @@
+$server_name=".\SQLEXPRESS" 
+$db_name="nestappes_db" 
+$db_data_folder="D:\DatabaseFiles\NestappES"
+$user_name="sa"
+$password="Pass@1234" 
+$execution_path=split-path -parent $MyInvocation.MyCommand.Definition 
+$db_create_script_path=$execution_path+"\nestappes_db_create.ps1" 
+
+Invoke-Command -ScriptBlock {& $db_create_script_path -server_name $server_name -db_name $db_name -db_data_folder $db_data_folder -user_name $user_name -password $password} 
+
+PAUSE

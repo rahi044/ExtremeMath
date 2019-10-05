@@ -1,0 +1,26 @@
+﻿<div ng-include="'app/shared/modal/modalHeader.html'"></div>
+<form name="newMathForm">
+    <div class="modal-body modalBody" id="modal-body">
+        <div class="">
+            <div class="verticalSpacer">
+                <div class="formLabel">User Name: </div>
+                <span class="labelRequired floatRight" ng-if="newMathForm.UserName.$invalid"> *Required</span>
+                <input type="text" class="form-control formInput" name="UserName" ng-model="newMath.User.UserName" placeholder="User Name" required ng-minlength="1" />
+            </div>
+            <div class="verticalSpacer">
+                <div class="formLabel">First Number: </div>
+                <span class="labelRequired floatRight" ng-if="newMathForm.FirstNumber.$invalid"> *Required</span>
+                <input type="text" class="form-control formInput" name="FirstNumber" ng-model="newMath.FirstNumber" placeholder="First Number" required ng-minlength="1" />
+            </div>
+            <div class="verticalSpacer">
+                <div class="formLabel">Second Number: </div>
+                <span class="labelRequired floatRight" ng-if="newMathForm.SecondNumber.$invalid"> *Required</span>
+                <input type="text" class="form-control formInput" name="SecondNumber" ng-model="newMath.SecondNumber" placeholder="Second Number" required ng-minlength="1" />
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer r-model-footer">
+        <button class="btn btn-primary" type="button" ng-click="ok()" ng-disabled="newMathForm.$invalid">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+</form>

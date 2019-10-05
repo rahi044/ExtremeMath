@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Extreme Math</title>
+    <base href="/" />
+    <meta charset="utf-8"/>
+    <link href="assets/libs/bootstrap/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/libs/angular/angular-block-ui.css" rel="stylesheet"/>
+    <link href="assets/libs/angular/ui-grid.min.css" rel="stylesheet"/>
+    <link href="assets/libs/angular/angular-toastr.css" rel="stylesheet"/>
+    <link href="assets/css/styles.css" rel="stylesheet"/>
+</head>
+<body ng-cloak>
+    <div class="container" ng-controller="indexController">
+        <div class="row navBarContainer">
+            <div ng-include="navBar"></div>
+        </div>
+        <div class="row">
+            <div ng-include="sideBar" class="sideBar fade-animation-container"></div>
+            <div id="mainContent" class="mainContent fade-animation-container" block-ui="mainContentBlockUI">
+                <div data-ng-view id="ng-view" class="fade-animation d-flex flex-column"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div ng-include="footer" class="footer"></div>
+        </div>
+    </div>
+    <script data-main="main" src="assets/libs/require/require.js"></script>
+</body>
+</html>

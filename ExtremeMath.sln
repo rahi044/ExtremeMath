@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtremeMath", "ExtremeMath\ExtremeMath.csproj", "{CC65CBB6-E585-44B5-952F-D55408384C59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{C371C374-CC02-4373-9831-ED76DA650EB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6D8275A2-EA5D-4F4B-8038-6161FAC7A357}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{DA5ADBD2-0D4F-4115-A30E-FCF7D8014E26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{6303F9FA-6813-4B76-BABA-32A2C545C458}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{952D7B00-F61A-434C-ACFB-043B8F145E20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtremeMathBll", "ExtremeMathBll\ExtremeMathBll.csproj", "{2610406C-CB0D-4301-BDE6-D8575600FB62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DatabaseManagement", "DatabaseManagement", "{9A94D310-19B3-49E3-912F-E909EBE870B7}"
+	ProjectSection(SolutionItems) = preProject
+		DatabaseManagement\CreateScripts\002_CreateTables.sql = DatabaseManagement\CreateScripts\002_CreateTables.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfDataAccess", "EfDataAccess\EfDataAccess.csproj", "{ACC3D28E-2926-419A-BE51-5FBBCA334C25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC65CBB6-E585-44B5-952F-D55408384C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC65CBB6-E585-44B5-952F-D55408384C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC65CBB6-E585-44B5-952F-D55408384C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC65CBB6-E585-44B5-952F-D55408384C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA5ADBD2-0D4F-4115-A30E-FCF7D8014E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA5ADBD2-0D4F-4115-A30E-FCF7D8014E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA5ADBD2-0D4F-4115-A30E-FCF7D8014E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA5ADBD2-0D4F-4115-A30E-FCF7D8014E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2610406C-CB0D-4301-BDE6-D8575600FB62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2610406C-CB0D-4301-BDE6-D8575600FB62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2610406C-CB0D-4301-BDE6-D8575600FB62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2610406C-CB0D-4301-BDE6-D8575600FB62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACC3D28E-2926-419A-BE51-5FBBCA334C25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACC3D28E-2926-419A-BE51-5FBBCA334C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACC3D28E-2926-419A-BE51-5FBBCA334C25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACC3D28E-2926-419A-BE51-5FBBCA334C25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC65CBB6-E585-44B5-952F-D55408384C59} = {C371C374-CC02-4373-9831-ED76DA650EB0}
+		{DA5ADBD2-0D4F-4115-A30E-FCF7D8014E26} = {6D8275A2-EA5D-4F4B-8038-6161FAC7A357}
+		{2610406C-CB0D-4301-BDE6-D8575600FB62} = {6303F9FA-6813-4B76-BABA-32A2C545C458}
+		{ACC3D28E-2926-419A-BE51-5FBBCA334C25} = {952D7B00-F61A-434C-ACFB-043B8F145E20}
+	EndGlobalSection
+EndGlobal
